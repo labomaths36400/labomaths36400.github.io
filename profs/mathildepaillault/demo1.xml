@@ -1,0 +1,47 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="qQ1hIYUu9q%]~;*$gYQZ" islocal="false" iscloud="false">n</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="45" y="99">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="data_setvariableto" id="m7G7uY=PCgV?Cq,.`prW">
+        <field name="VARIABLE" id="qQ1hIYUu9q%]~;*$gYQZ" variabletype="">n</field>
+        <value name="VALUE">
+          <shadow type="text" id="qS9n[;K]2M]TZ2CWa.+w">
+            <field name="TEXT">0</field>
+          </shadow>
+          <block type="ggb_valeur_de" id="@@^T:8:277P-tt+ZJGh]">
+            <value name="NAME">
+              <shadow type="text" id=":^IgmnV~7G*oji4ysUf^">
+                <field name="TEXT">n</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="control_repeat" id="MO0*NqF`,;#MHQ}y!2q%">
+            <value name="TIMES">
+              <shadow type="math_whole_number" id="H?~}x0*v1O9|TNp%6PY%">
+                <field name="NUM">6</field>
+              </shadow>
+              <block type="data_variable" id="Oi#r@{7$DaSzCIz)d.zc">
+                <field name="VARIABLE" id="qQ1hIYUu9q%]~;*$gYQZ" variabletype="">n</field>
+              </block>
+            </value>
+            <statement name="SUBSTACK">
+              <block type="avancer_reculer" id="*^~~(P,QU8`h_VFU+w~S">
+                <field name="OP">forward</field>
+                <value name="NAME">
+                  <shadow type="math_number" id=")-ONIgeZ@YhTPAJdxzs}">
+                    <field name="NUM">1</field>
+                  </shadow>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
