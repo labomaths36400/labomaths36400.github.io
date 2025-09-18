@@ -1,0 +1,13 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables></variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+  </block>
+  <block type="control_repeat" id="*!vQN@GS]`P33hPWyq$d" x="152" y="231">
+    <value name="TIMES">
+      <shadow type="math_whole_number" id="iM2OvLLQgis|TJ!I(Jow">
+        <field name="NUM">33</field>
+      </shadow>
+    </value>
+  </block>
+</xml>
