@@ -1,0 +1,80 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="j]yr@hkkFQop,_m;WZVy" islocal="false" iscloud="false">jet</variable>
+    <variable type="" id="*rZW/7dv!nwJrDP8}H@|" islocal="false" iscloud="false">n</variable>
+    <variable type="" id="nSk*,_nm0,;{/qfTi5pM" islocal="false" iscloud="false">somme</variable>
+    <variable type="" id="T}AY/F3nAh4fxi^+2y`O" islocal="false" iscloud="false">reste</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="-146" y="28">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="data_setvariableto" id="$3wGt3.m7y9O=es~LL),">
+        <field name="VARIABLE" id="*rZW/7dv!nwJrDP8}H@|" variabletype="">n</field>
+        <value name="VALUE">
+          <shadow type="text" id="{q*#g1=un?h`CW))4rE8">
+            <field name="TEXT">0</field>
+          </shadow>
+          <block type="operator_random" id="`1z:}El0Hzmy8/hS9qu_">
+            <value name="FROM">
+              <shadow type="math_number" id="!VTmB,UHb^-sAcnk283_">
+                <field name="NUM">1</field>
+              </shadow>
+            </value>
+            <value name="TO">
+              <shadow type="math_number" id="$UGAmepXlFf;wPk4G_%{">
+                <field name="NUM">10</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="looks_say" id="uXNZE8VaX6C}i7z`jzFs">
+            <value name="MESSAGE">
+              <shadow type="text" id="rUrqw=lngr7gP3uaIm(,">
+                <field name="TEXT"></field>
+              </shadow>
+            </value>
+            <next>
+              <block type="data_setvariableto" id="4cXwVVhpaQm|?5Ca+kCI">
+                <field name="VARIABLE" id="T}AY/F3nAh4fxi^+2y`O" variabletype="">reste</field>
+                <comment id="u8KnD_wmo/sr$$az(dkL" pinned="true" h="90.66665649414062" w="145.33331298828125" x="28" y="266.66666666666663" minimized="false">Division par 3</comment>
+                <value name="VALUE">
+                  <shadow type="text" id="J;c5{Q{x~P:::;]sVBOQ">
+                    <field name="TEXT">0</field>
+                  </shadow>
+                  <block type="operator_mod" id="}5ZibV3OQ0o`)#yYiQ$9">
+                    <value name="NUM1">
+                      <shadow type="math_number" id="JQ#;hHG:|g1*$]2!qdI#">
+                        <field name="NUM"></field>
+                      </shadow>
+                      <block type="data_variable" id="fRD-8E15MWd0hFg0FA00">
+                        <field name="VARIABLE" id="*rZW/7dv!nwJrDP8}H@|" variabletype="">n</field>
+                      </block>
+                    </value>
+                    <value name="NUM2">
+                      <shadow type="math_number" id="PJ75+]euy?{yT8y:{/~9">
+                        <field name="NUM">3</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="looks_say" id=")tg([SK#!K5JfX#R$Nw=">
+                    <value name="MESSAGE">
+                      <shadow type="text" id="+5[3Mr_Q9ITJNm)s0x3{">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="data_variable" id="^YY$r/J4mWoLq#e%SsZe">
+                        <field name="VARIABLE" id="T}AY/F3nAh4fxi^+2y`O" variabletype="">reste</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

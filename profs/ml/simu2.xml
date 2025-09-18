@@ -1,0 +1,111 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="j]yr@hkkFQop,_m;WZVy" islocal="false" iscloud="false">jet</variable>
+    <variable type="" id="drW7l$UP(s?hBg#sf}Gc" islocal="false" iscloud="false">m</variable>
+  </variables>
+  <block type="procedures_definition" id=":|Kw^H$$/x~xP#~?SnX#" x="37" y="63">
+    <statement name="custom_block">
+      <block type="procedures_prototype" id="zx0plWN8TUu4x!EUDh}E">
+        <mutation proccode="simulation %s" argumentids="[&quot;ARG1&quot;]" argumentnames="[&quot;n&quot;]" argumentdefaults="[&quot;&quot;]" warp="false"></mutation>
+        <value name="ARG1">
+          <shadow type="argument_reporter_string_number" id="E3_O}KL|4xip#zgR3d!^">
+            <field name="VALUE">n</field>
+          </shadow>
+        </value>
+      </block>
+    </statement>
+    <next>
+      <block type="data_setvariableto" id="BJ]0og-UCx(67;/Z@T{k">
+        <field name="VARIABLE" id="drW7l$UP(s?hBg#sf}Gc" variabletype="">m</field>
+        <value name="VALUE">
+          <shadow type="text" id="GY;NGqJ5My]aEQ$tlehO">
+            <field name="TEXT">1</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="control_repeat" id="F`IN7C2)mYz;s405$1;A">
+            <value name="TIMES">
+              <shadow type="math_whole_number" id="%ES@#J#[KPYjHJqVe)XF">
+                <field name="NUM">10</field>
+              </shadow>
+              <block type="argument_reporter_string_number" id="[-t|qzA[z=E{E,k4LdI[">
+                <field name="VALUE">n</field>
+              </block>
+            </value>
+            <statement name="SUBSTACK">
+              <block type="data_setvariableto" id="fa5PeX`BGogTW;OA[.6i">
+                <field name="VARIABLE" id="j]yr@hkkFQop,_m;WZVy" variabletype="">jet</field>
+                <value name="VALUE">
+                  <shadow type="text" id="hfe;0i~{gR=frtKWl^c2">
+                    <field name="TEXT">0</field>
+                  </shadow>
+                  <block type="operator_random" id=":Jz3[+c{SbX9tO;R$oPH">
+                    <value name="FROM">
+                      <shadow type="math_number" id="~M4K{`w-AHp-mkywt;9z">
+                        <field name="NUM">1</field>
+                      </shadow>
+                    </value>
+                    <value name="TO">
+                      <shadow type="math_number" id="GgzD.(@n7QsnpM;ynktt">
+                        <field name="NUM">6</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="ggb_setCell" id="`ohLMYaNF^!`i#;cI;k1">
+                    <value name="col">
+                      <shadow type="text" id="CNQ!-D.r`Sq%y*K2fz1d">
+                        <field name="TEXT">A</field>
+                      </shadow>
+                    </value>
+                    <value name="lig">
+                      <shadow type="math_number" id="+r+/rmA5t.m2LrGfx{{:">
+                        <field name="NUM">1</field>
+                      </shadow>
+                      <block type="data_variable" id="R=iE!r^2kfv/m6O[r:/B">
+                        <field name="VARIABLE" id="drW7l$UP(s?hBg#sf}Gc" variabletype="">m</field>
+                      </block>
+                    </value>
+                    <value name="valeur">
+                      <shadow type="text" id="kS^v4DUIRcLF%v{24$q5">
+                        <field name="TEXT">2</field>
+                      </shadow>
+                      <block type="data_variable" id="=^FFW#LIHTv)2n|,u.?9">
+                        <field name="VARIABLE" id="j]yr@hkkFQop,_m;WZVy" variabletype="">jet</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="data_changevariableby" id="5(=E?P]-`D01.h1}.h`C">
+                        <field name="OP">+</field>
+                        <field name="VARIABLE" id="drW7l$UP(s?hBg#sf}Gc" variabletype="">m</field>
+                        <value name="VALUE">
+                          <shadow type="math_number" id="=VmdKu_@CPDZD|JaS}GB">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="47" y="434">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="procedures_call" id="N_O5xwG.KKAF+MgBiuW3">
+        <mutation proccode="simulation %s" argumentids="[&quot;ARG1&quot;]" warp="false"></mutation>
+        <value name="ARG1">
+          <shadow type="text" id="Tb_hyk2Z]#4z|L0pPBO]">
+            <field name="TEXT">100</field>
+          </shadow>
+        </value>
+      </block>
+    </next>
+  </block>
+</xml>

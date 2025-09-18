@@ -1,0 +1,70 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="#-;)X$d!_q[~i7_oBmqV" islocal="false" iscloud="false">n</variable>
+    <variable type="" id="s;9%Dxxv@3yP]*WTdFf[" islocal="false" iscloud="false">somme</variable>
+    <variable type="" id="n0NpZ$h*#/{q9O.7tioR" islocal="false" iscloud="false">jet</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="0" y="0">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="data_setvariableto" id="UI5IwY7gTH]G3;:X!Wt}">
+        <field name="VARIABLE" id="#-;)X$d!_q[~i7_oBmqV" variabletype="">n</field>
+        <value name="VALUE">
+          <shadow type="text" id="oR!,gS6w0cCvX+H?t}Hw">
+            <field name="TEXT">100</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="data_setvariableto" id="+yg-y%8!45puI3EK{@VA">
+            <field name="VARIABLE" id="s;9%Dxxv@3yP]*WTdFf[" variabletype="">somme</field>
+            <value name="VALUE">
+              <shadow type="text" id="Pht.9AS3*@iA#daT}In[">
+                <field name="TEXT">0</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="control_repeat" id="-dHRL7;VXG(Pp~)M~f#V">
+                <value name="TIMES">
+                  <shadow type="math_whole_number" id="esfqZ)SZQ0YM:58Sxg0^">
+                    <field name="NUM">10</field>
+                  </shadow>
+                </value>
+                <statement name="SUBSTACK">
+                  <block type="data_setvariableto" id="Xi2Ll9,#$4:N6E7jjhN-">
+                    <field name="VARIABLE" id="n0NpZ$h*#/{q9O.7tioR" variabletype="">jet</field>
+                    <value name="VALUE">
+                      <shadow type="text" id="w0?8zib)Wj=GR0VG?}T8">
+                        <field name="TEXT">0</field>
+                      </shadow>
+                      <block type="operator_random" id="|2OsjbDX+?/xDW;Ns9tL">
+                        <value name="FROM">
+                          <shadow type="math_number" id="i3Kb_M!sMkr8jQT0/@Lv">
+                            <field name="NUM">1</field>
+                          </shadow>
+                        </value>
+                        <value name="TO">
+                          <shadow type="math_number" id="g(=/V,$Qp$Jab!4G?Irv">
+                            <field name="NUM">6</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="looks_say" id=")=3_l4eUwJku/!jVLkD1">
+                    <value name="MESSAGE">
+                      <shadow type="text" id="?KT}hHl-MTE3]bAhU5n|">
+                        <field name="TEXT"></field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
