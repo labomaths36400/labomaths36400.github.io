@@ -1,0 +1,100 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="Fpr#v[9}HD+A^x5E|_BS" islocal="false" iscloud="false">count</variable>
+    <variable type="" id="RO:c|/kAO9tK2$Z@yxNs" islocal="false" iscloud="false">alea</variable>
+  </variables>
+  <block type="event_whenflagclicked" id="w:1i[$^?J)c+^r0;Lpti" x="15" y="29">
+    <field name="MY_ICON_BUTTON">./js/scratch/media/green-flag.svg</field>
+    <next>
+      <block type="controls_for" id="hlW2*wD.=`Vp=].+CWfp">
+        <field name="VARIABLE" id="Fpr#v[9}HD+A^x5E|_BS" variabletype="">count</field>
+        <value name="FROM">
+          <shadow type="math_number" id="zl!dnx%JhGJ,Q`JH[=(w">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <value name="TO">
+          <shadow type="math_number" id="o0q{cx`*xZ`H1cz/gr(^">
+            <field name="NUM">100</field>
+          </shadow>
+        </value>
+        <value name="BY">
+          <shadow type="math_number" id="7H}f*j6IAO[g:oY/-wIU">
+            <field name="NUM">1</field>
+          </shadow>
+        </value>
+        <statement name="DO">
+          <block type="data_setvariableto" id="3c4i)7sLDM]6qI~`^/wq">
+            <field name="VARIABLE" id="RO:c|/kAO9tK2$Z@yxNs" variabletype="">alea</field>
+            <value name="VALUE">
+              <shadow type="text" id="z4|y246Iksb`Xa(l)9%)">
+                <field name="TEXT">0</field>
+              </shadow>
+              <block type="operator_random" id="zJB-FQQp;43ka9IWM$,_">
+                <value name="FROM">
+                  <shadow type="math_number" id="W6Z~+[!,5V*3@(%[P{x,">
+                    <field name="NUM">0</field>
+                  </shadow>
+                </value>
+                <value name="TO">
+                  <shadow type="math_number" id="-n$u`k|xUR3nQ$ov}S:=">
+                    <field name="NUM">500</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="ggb_point" id="s7r;jLM)%Vny48L%j3@6">
+                <value name="NOM">
+                  <shadow type="text" id="#Zc5KL[lb~qH1Sj=[dr@">
+                    <field name="TEXT">A</field>
+                  </shadow>
+                </value>
+                <value name="X">
+                  <shadow type="math_number" id=";8!,@MZbyHOA|Ar6t7z:">
+                    <field name="NUM">0</field>
+                  </shadow>
+                  <block type="operator_divide" id="WPy=dx[W4BegFB*C@Es-">
+                    <value name="NUM1">
+                      <shadow type="math_number" id="jB+SJ*(~^MdPY1RveogV">
+                        <field name="NUM"></field>
+                      </shadow>
+                      <block type="data_variable" id="d?W^L*!ou;%:1c5ne|if">
+                        <field name="VARIABLE" id="Fpr#v[9}HD+A^x5E|_BS" variabletype="">count</field>
+                      </block>
+                    </value>
+                    <value name="NUM2">
+                      <shadow type="math_number" id="JQ;}M`Q?8wbrt^ZTk/yM">
+                        <field name="NUM">5</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <value name="Y">
+                  <shadow type="math_number" id="DjZ%GqaQ;XWzzs,3ee#W">
+                    <field name="NUM">2</field>
+                  </shadow>
+                  <block type="operator_divide" id="23!pEYDvK_^@[/D${sUm">
+                    <value name="NUM1">
+                      <shadow type="math_number" id=",!ccB1Tvrtz%bzNRKv^j">
+                        <field name="NUM"></field>
+                      </shadow>
+                      <block type="data_variable" id="%.O[u4gtqC+KKoON{Ep9">
+                        <field name="VARIABLE" id="RO:c|/kAO9tK2$Z@yxNs" variabletype="">alea</field>
+                      </block>
+                    </value>
+                    <value name="NUM2">
+                      <shadow type="math_number" id="(yl**aY75epcsACVZQW]">
+                        <field name="NUM">100</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>
